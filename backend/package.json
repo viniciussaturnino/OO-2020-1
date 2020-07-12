@@ -12,6 +12,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "knex": "^0.21.2",
+    "nodemailer": "^6.4.10",
+    "nodemailer-express-handlebars": "^4.0.0",
     "sqlite3": "^5.0.0"
   },
   "devDependencies": {
