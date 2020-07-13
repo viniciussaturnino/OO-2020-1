@@ -16,7 +16,7 @@ module.exports = {
             if(!user){
                 const createdAt = new Date();
 
-                // inserir dados na tabela de usuarios
+                // insert datas in users table
                 await connection('users').insert({
                     name,
                     email,
@@ -24,7 +24,7 @@ module.exports = {
                     createdAt
                 })
 
-                // enviar email com o assunto
+                // send mail with subject
                 mailer.sendMail({
                     to: 'viniciussaturnino78@gmail.com',
                     from: email,
@@ -34,11 +34,10 @@ module.exports = {
                     if(err)
                         return response.status(400).send({ error: 'Algo deu errado' })
                 })
-                // return response.json({ subject });
-                return response.send('Email enviado');
+                console.log('Email enviado');
             }
             else{
-                // somente enviar email
+                // just send mail
                 mailer.sendMail({
                     to: 'viniciussaturnino78@gmail.com',
                     from: email,
@@ -48,8 +47,9 @@ module.exports = {
                     if(err)
                         return response.status(400).send({ error: 'Algo deu errado' })
                 })
-                return response.send('Usuario ja existe, email enviado');
+                console.log('Usuario existente, email enviado');
             }
+            return response.json({ subject });
         } catch (err) {
             console.log(err);
             return response.status(400).send({ error: 'Algo deu errado' });
