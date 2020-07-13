@@ -1,4 +1,5 @@
 const connection = require('../database/connection');
+const mailer = require('../modules/mailer');
 
 module.exports = {
     async index (request, response){
@@ -24,11 +25,29 @@ module.exports = {
                 })
 
                 // enviar email com o assunto
-
-                return response.json({ subject });
+                mailer.sendMail({
+                    to: 'viniciussaturnino78@gmail.com',
+                    from: email,
+                    template: 'auth/NewLead',
+                    context: { subject },
+                }, (err) => {
+                    if(err)
+                        return response.status(400).send({ error: 'Algo deu errado' })
+                })
+                // return response.json({ subject });
+                return response.send('Email enviado');
             }
             else{
                 // somente enviar email
+                mailer.sendMail({
+                    to: 'viniciussaturnino78@gmail.com',
+                    from: email,
+                    template: 'auth/NewLead',
+                    context: { subject },
+                }, (err) => {
+                    if(err)
+                        return response.status(400).send({ error: 'Algo deu errado' })
+                })
                 return response.send('Usuario ja existe, email enviado');
             }
         } catch (err) {
