@@ -26,7 +26,6 @@ body {
 }
 
 .home{
-    position: relative;
     width: 100vw;
     height: 90vh;
     background-image: url('./assets/galaxy.png');
@@ -40,6 +39,7 @@ body {
     font-size: 50px;
     line-height: 98px;
     text-align: center;
+<<<<<<< HEAD
 }
 
 .content{
@@ -85,4 +85,6 @@ body {
 
 .content button:hover{
     filter: brightness(70%);
+=======
+>>>>>>> parent of 79c73b2... Positioned title in home
 }
