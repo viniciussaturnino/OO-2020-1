@@ -9,9 +9,13 @@ function App() {
       <div className='app'>
         <div className="home">
           <Navbar/>
-          <h1>BEM VINDO AO MEU <br/>UNIVERSO</h1>
+          <div className="content">
+            <h1>BEM VINDO AO MEU <br/>UNIVERSO</h1>
+            <div/>
+            <p>desenvolvedor web full-stack Node e React.</p>
+            <button>Saiba mais</button>
+          </div>
         </div>
-        <Footer/>
       </div>
   );
 }
