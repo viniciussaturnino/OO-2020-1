@@ -1,8 +1,14 @@
 import React from 'react';
+import Navbar from './common/Navbar/index';
+
+
+import './global.css'
 
 function App() {
   return (
-    <h1>Hello World</h1>
+      <div className='app'>
+        <Navbar/>
+      </div>
   );
 }
 
