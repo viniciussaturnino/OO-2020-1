@@ -7,7 +7,10 @@ import './global.css'
 function App() {
   return (
       <div className='app'>
-        <Navbar/>
+        <div className="home">
+          <Navbar/>
+          <h1>BEM VINDO AO MEU <br/>UNIVERSO</h1>
+        </div>
         <Footer/>
       </div>
   );

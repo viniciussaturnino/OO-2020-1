@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -17,3 +19,18 @@ body {
     background: #0E0B16;
 }
 
+.home{
+    width: 100vw;
+    height: 70vh;
+    background-image: url('./assets/galaxy.png');
+}
+
+.home h1{
+    color: #e7dfdd;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 98px;
+    text-align: center;
+}
