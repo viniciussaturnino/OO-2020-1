@@ -2,6 +2,7 @@
 
 .footer{
     background: rgba(5, 5, 5, 0.5);
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
