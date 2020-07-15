@@ -20,12 +20,14 @@ body {
 }
 
 .home{
+    position: relative;
     width: 100vw;
     height: 70vh;
     background-image: url('./assets/galaxy.png');
 }
 
 .home h1{
+    position: absolute;
     color: #e7dfdd;
     font-family: Montserrat;
     font-style: normal;
@@ -33,4 +35,6 @@ body {
     font-size: 50px;
     line-height: 98px;
     text-align: center;
+    top: 25vh;
+    left: 30vw;
 }
