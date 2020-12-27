@@ -1,3 +1,3 @@
-# Desenvolvimento web de site pessoal
+# Orientação a Objetos - Turma 2020/1
 
-Esse é um repositório destinado ao desenvolvimento de uma aplicação web como portifólio, apresentação pessoal e contato. Desenvolvido em NodeJS e ReactJS.
+Repositório destinado à matéria de Orientação a Objetos no primeiro semestre de 2020.
